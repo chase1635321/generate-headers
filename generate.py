@@ -22,6 +22,7 @@ for function in functions:
     p = code.split("{")[0]
     p = p.split("\n")
     prototype = ""
+
     for line in p:
         if not "//" in line:
             prototype += line

@@ -46,5 +46,4 @@ void sym._init();
 int main(int argc, char **argv);
 void fcn.00005370();
 void fcn.00005370();
-
 ```
