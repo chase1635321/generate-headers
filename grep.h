@@ -1,0 +1,14 @@
+int sym.fts_set(int placeholder_0, int arg2, int arg3);
+int sym._obstack_memory_used(int arg1);
+int sym.fts_children(int arg1, int arg2);
+int * sym._obstack_newchunk(int arg1, int arg2);
+void sym._fini();
+void sym._obstack_free(int arg1, int arg2);
+int ** sym._obstack_begin(int arg1, int arg2, int arg3, int arg4, int arg5);
+int * sym.fts_open(int arg1, int arg2, int arg3);
+int *sym.fts_read(int arg7, int placeholder_1, int placeholder_2, int placeholder_3,            int placeholder_4, int placeholder_5, int placeholder_6, int placeholder_7,            int arg1);
+int sym.fts_close(int arg1);
+void sym._init();
+int main(int argc, char **argv);
+void fcn.00005370();
+void fcn.00005370();

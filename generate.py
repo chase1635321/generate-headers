@@ -18,12 +18,13 @@ print("Found " + str(len(functions)) + " functions")
 
 for function in functions:
     r.cmd("s " + function)
-    code = r.cmd("pdg").split("\n")
+    code = r.cmd("pdg")
+    p = code.split("{")[0]
+    p = p.split("\n")
     prototype = ""
-    for line in code:
-        if "(" in line and ")" in line and not "WARNING" in line:
-            prototype = line
-            break
+    for line in p:
+        if not "//" in line:
+            prototype += line
     prototype = prototype.replace("int64_t", "int")
     prototype = prototype.replace("undefined8", "int")
     prototype = prototype.replace("uint", "int")
