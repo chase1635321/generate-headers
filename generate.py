@@ -26,7 +26,9 @@ for function in functions:
             break
     prototype = prototype.replace("int64_t", "int")
     prototype = prototype.replace("undefined8", "int")
+    prototype = prototype.replace("uint", "int")
     prototype = prototype.replace("(void)", "()")
+    prototype = prototype.replace("undefined", "void")
     data.append((function, prototype))
     
 output = ""
