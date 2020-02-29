@@ -1,0 +1,7 @@
+NAME="bug 6678: crash case"
+CMDS=<<EOF
+-d malloc://512 -'
+EOF
+EXPECT=<<EOF
+EOF
+RUN

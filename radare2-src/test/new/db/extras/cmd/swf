@@ -1,0 +1,10 @@
+NAME='SWF: open'
+BROKEN=1
+FILE=../../bins/swf/CurveBall.swf
+CMDS=<<EOF
+iI~arch
+EOF
+EXPECT=<<EOF
+arch     swf
+EOF
+RUN
